@@ -4,7 +4,7 @@ FROM debian:stable-20220711-slim as stage1
 ARG DOCKER_HUB_URL=https://hub.docker.com/repository/docker/
 ARG DOCKER_HUB_HOST=ochmanskide
 ARG IMAGE_SOURCE="https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11"
-ARG JAVA_VERSION="11.0.4"
+ARG JAVA_VERSION="11.0.16"
 ARG JAVA_HOME="/opt/graalvm"
 ARG GRAALVM_HOME="/opt/graalvm"
 ARG JAVA_MAJOR_VERSION=11
@@ -51,7 +51,7 @@ FROM debian:stable-20220711-slim
 ARG DOCKER_HUB_URL=https://hub.docker.com/repository/docker/
 ARG DOCKER_HUB_HOST=ochmanskide
 ARG IMAGE_SOURCE="https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11"
-ARG JAVA_VERSION="11.0.4"
+ARG JAVA_VERSION="11.0.16"
 ARG JAVA_HOME="/opt/graalvm"
 ARG GRAALVM_HOME="/opt/graalvm"
 ARG JAVA_MAJOR_VERSION=11
