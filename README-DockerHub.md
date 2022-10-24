@@ -50,7 +50,7 @@ cd /home/quarkus/code-with-quarkus
 ```
 #### 1.2.4. build native image:
 ```bash
-mvn package -Dquarkus.package.type=native
+mvn package -Pnative
 ```
 #### 1.2.5. when the build completes, you may run the binary, which is located somewhere in /build/libs/ directory.
 ```bash
