@@ -101,7 +101,7 @@ https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bulls
 
 ## 5. Image coordinates:
 ```  
-docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.10
+docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0
 ```
 
 ## 6. Available Docker images and tags:
@@ -191,7 +191,7 @@ apt install g++ zlib1g-dev libfreetype6-dev
 
 ## 11. Docker image details:
 ```bash
-$ docker run -it --entrypoint /bin/bash ochmanskide/mandrel-maven:latest
+$ docker run -it --entrypoint /bin/bash ochmanskide/mandrel-maven:mandrel-22-2-maven-3-8-6-java-11
 
 # echo $0
 /bin/bash
@@ -215,7 +215,7 @@ BUG_REPORT_URL="https://bugs.debian.org/"
 
 # printenv
 GRAALVM_HOME=/opt/graalvm
-HOSTNAME=b1b4ae122f74
+HOSTNAME=13372377a707
 JAVA_HOME=/opt/graalvm
 PWD=/home/maven
 IMAGE_SOURCE=https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11
@@ -230,16 +230,16 @@ PATH=/opt/graalvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
 DOCKER_HUB_HOST=ochmanskide
 DOWNLOADS=/downloads
 DEBIAN_FRONTEND=noninteractive
-JAVA_VERSION=11.0.4
+JAVA_VERSION=11.0.16
 _=/usr/bin/printenv
 
 # curl --version
 bash: curl: command not found
 
 # java -version
-openjdk version "11.0.4" 2022-07-19
-OpenJDK Runtime Environment Temurin-11.0.4+8 (build 11.0.4+8)
-OpenJDK 64-Bit Server VM Temurin-11.0.4+8 (build 11.0.4+8, mixed mode, sharing)
+openjdk version "11.0.16" 2022-07-19
+OpenJDK Runtime Environment Temurin-11.0.16+8 (build 11.0.16+8)
+OpenJDK 64-Bit Server VM Temurin-11.0.16+8 (build 11.0.16+8, mixed mode)
 
 # git version
 git version 2.30.2
@@ -251,7 +251,7 @@ Docker version 20.10.11, build dea9396
 
 Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
 Maven home: /opt/maven
-Java version: 11.0.4, vendor: Eclipse Adoptium, runtime: /opt/graalvm
+Java version: 11.0.16, vendor: Eclipse Adoptium, runtime: /opt/graalvm
 Default locale: en_US, platform encoding: ANSI_X3.4-1968
 OS name: "linux", version: "5.10.25-linuxkit", arch: "amd64", family: "unix"
 
@@ -264,7 +264,7 @@ aws-cli/2.7.18 Python/3.9.11 Linux/5.10.104-linuxkit exe/x86_64.debian.11 prompt
 
 ## 12. Usage
 ```bash
-docker run -it --entrypoint /bin/bash ochmanskide/mandrel-maven
+docker run -it --entrypoint /bin/bash ochmanskide/mandrel-maven::mandrel-22-2-maven-3-8-6-java-11
 java -version && echo
 mvn -version && echo
 docker --version && echo
