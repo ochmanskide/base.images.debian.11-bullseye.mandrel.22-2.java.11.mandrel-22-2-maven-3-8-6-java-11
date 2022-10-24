@@ -1,6 +1,6 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
-last updated: last updated: Mon Oct 24 16:55:19 CEST 2022   
+last updated: last updated: Mon Oct 24 17:27:40 CEST 2022   
 author: Lukasz Ochmanski (github@ochmanski.de)  
   
 [![Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11/tags/1.0.0)  
@@ -27,7 +27,7 @@ author: Lukasz Ochmanski (github@ochmanski.de)
 - [4. DockerHub page:](#4-dockerhub-page)
 - [5. Image coordinates:](#5-image-coordinates)
 - [6. Available Docker images and tags:](#6-available-docker-images-and-tags)
-- [7. What's in this image](#7-whats-in-this-image)
+- [7. What's in this image?](#7-whats-in-this-image)
 - [8. FROM image:](#8-from-image)
 - [9. Docker Hub page:](#9-docker-hub-page)
 - [10. Excerpt from official Mandrel documentation](#10-excerpt-from-official-mandrel-documentation)
