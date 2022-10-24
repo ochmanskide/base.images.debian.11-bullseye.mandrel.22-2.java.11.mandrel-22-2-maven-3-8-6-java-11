@@ -65,10 +65,10 @@ docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mand
 ## 3. Latest Tags:
 ```
 REPOSITORY                                                                                        TAG                               IMAGE ID       SIZE
-ochmanskide/graalvm-maven                                                                          mandrel-22-2-maven-3-8-6-java-11   00456ebbedab   933.52MB
-ochmanskide/mandrel-maven                                                                          mandrel-22-2-maven-3-8-6-java-11   00456ebbedab   933.52MB
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11   1.0.0                             00456ebbedab   933.52MB
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11   latest                            00456ebbedab   933.52MB
+ochmanskide/graalvm-maven                                                                          mandrel-22-2-maven-3-8-6-java-11   512232d63c93   918.61MB
+ochmanskide/mandrel-maven                                                                          mandrel-22-2-maven-3-8-6-java-11   512232d63c93   918.61MB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11   1.0.0                             512232d63c93   918.61MB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11   latest                            512232d63c93   918.61MB
 ```
 
 ## 4. What's in this image?
