@@ -8,7 +8,7 @@
 # thank you
 
 #docker login
-cd $GITHUB/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-gradle-7-5-java-17 || exit
+cd $GITHUB/base/images/debian/11-bullseye/mandrel/22-2/java/17/mandrel-22-2-maven-3-8-6-java-17 || exit
 DOCKER_HUB_HOST=ochmanskide
 #GROUP_ID=$(gradle rootProjectGroupRaw -q)
 #ARTIFACT_ID=$(gradle rootProjectNameRaw -q)
