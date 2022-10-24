@@ -112,6 +112,7 @@ SHELL ["/bin/bash", "-c"]
 # Git - 70MB
 # Total: 426 MB
 RUN ln -s /opt/maven/bin/mvn /usr/bin/mvn \
+    && mkdir -p /home/maven/.m2 \
     && ln -s /home/maven/.m2 /root/.m2 \
     && apt-get clean \
     && apt-get update -y \
