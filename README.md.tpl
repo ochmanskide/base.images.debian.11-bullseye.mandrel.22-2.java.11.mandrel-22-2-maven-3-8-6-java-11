@@ -52,7 +52,7 @@ This capability is vital for deploying to containers in a cloud-native applicati
 
 ## Before you start
 
-### Maven configuration
+### Gradle configuration
 
 Before you start it is assumed that you installed SDKMAN, Java and Gradle.
 ```bash
@@ -197,7 +197,7 @@ $ docker run -it --entrypoint /bin/bash ochmanskide/mandrel-maven:latest
 /bin/bash
 
 # pwd
-/home/mvn
+/home/maven
 
 # whoami
 root
@@ -215,32 +215,31 @@ BUG_REPORT_URL="https://bugs.debian.org/"
 
 # printenv
 GRAALVM_HOME=/opt/graalvm
-DOCKER_HUB_URL=https://hub.docker.com/repository/docker/
-DOCKER_HOST=ochmanskide
+HOSTNAME=b1b4ae122f74
 JAVA_HOME=/opt/graalvm
-M2_HOME=/opt/mvn
-DOCKER_REPOSITORY=releases
-PWD=/home/mvn
+PWD=/home/maven
 IMAGE_SOURCE=https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-maven-3-8-6-java-17
-HOME=/root
 MAVEN_VERSION=3.8.6
+HOME=/root
+M2_HOME=/opt/maven
 TERM=xterm
-HOST=ochmanskide
+MAVEN_HOME=/opt/maven
 SHLVL=1
+DOCKER_HUB_URL=https://hub.docker.com/repository/docker/
 PATH=/opt/graalvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+DOCKER_HUB_HOST=ochmanskide
 DOWNLOADS=/downloads
 DEBIAN_FRONTEND=noninteractive
-JAVA_VERSION=17.0.3+7
+JAVA_VERSION=17.0.4
 _=/usr/bin/printenv
 
 # curl --version
 bash: curl: command not found
 
 # java -version
-openjdk version "17.0.3" 2022-04-19
-OpenJDK Runtime Environment Temurin-17.0.3+7 (build 17.0.3+7)
-OpenJDK 64-Bit Server VM Temurin-17.0.3+7 (build 17.0.3+7, mixed mode, sharing)
-root@40d34d5c68df:/home/mvn#
+openjdk version "17.0.4" 2022-07-19
+OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8)
+OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode, sharing)
 
 # git version
 git version 2.30.2
@@ -250,7 +249,11 @@ Docker version 20.10.11, build dea9396
 
 # mvn -version
 
-
+Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
+Maven home: /opt/maven
+Java version: 17.0.4, vendor: Eclipse Adoptium, runtime: /opt/graalvm
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "5.10.25-linuxkit", arch: "amd64", family: "unix"
 
 
 # aws --version
@@ -278,7 +281,7 @@ docker images && echo
 docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-maven-3-8-6-java-17
 git clone https://github.com/ochmanskide/quarkus.code-with-quarkus.git /home/quarkus/code-with-quarkus
 cd /home/quarkus/code-with-quarkus/
-./mvnw package -Pnative
+mvn package -Pnative
 ./target/code-with-quarkus-1.0.0-SNAPSHOT-runner
 ```
 
