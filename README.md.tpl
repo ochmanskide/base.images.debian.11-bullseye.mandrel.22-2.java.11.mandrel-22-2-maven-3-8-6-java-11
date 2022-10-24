@@ -107,8 +107,8 @@ docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mand
 ## 6. Available Docker images and tags:
 ```
 REPOSITORY                                                                                        TAG                    SIZE
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11   ###CI_COMMIT_TAG###                  918.61MB
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11   latest                 918.61MB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11  ###CI_COMMIT_TAG###                  918.61MB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11  latest                 918.61MB
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
 
@@ -124,7 +124,7 @@ debian                                                                          
 debian-11-bullseye/mandrel-22-2-maven-3-8-6-java-11   00-slim            80MB   (80MB)
 debian-11-bullseye/mandrel-22-2-maven-3-8-6-java-11   01-clean           80MB   (0MB)
 debian-11-bullseye/mandrel-22-2-maven-3-8-6-java-11   02-graalvm         465MB  (385MB)
-debian-11-bullseye/mandrel-22-2-maven-3-8-6-java-11   03-maven          594MB  (129MB)
+debian-11-bullseye/mandrel-22-2-maven-3-8-6-java-11   03-maven           594MB  (129MB)
 debian-11-bullseye/mandrel-22-2-maven-3-8-6-java-11   04-aws-cli         753MB  (159MB)
 debian-11-bullseye/mandrel-22-2-maven-3-8-6-java-11   05-docker-cli      805MB  (52MB)
 debian-11-bullseye/mandrel-22-2-maven-3-8-6-java-11   06-dockerd         870MB  (65MB)
