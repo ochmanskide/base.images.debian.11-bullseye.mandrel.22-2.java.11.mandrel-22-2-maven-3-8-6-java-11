@@ -15,7 +15,7 @@ then
 else
   gradle dockerPush
   echo
-  docker push ochmanskide/base.images.debian.11-bullseye.mandrel.22-1.java.17.mandrel-22-1-gradle-7-5-java-17:latest
+  docker push ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.17.mandrel-22-2-maven-7-5-java-17:latest
   echo
   docker images
 fi
