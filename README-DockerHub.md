@@ -57,12 +57,12 @@ mvn package -Pnative
 /home/quarkus/code-with-quarkus/build/libs/code-with-quarkus-1.0.0-SNAPSHOT-runner
 ```
 
-## 2. How to pull image:
+## 2. How to pull image?
 ```  
 docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:latest
 ```
 
-## 3. Latest Tags:
+## 3. Latest Tags
 ```
 REPOSITORY                                                                                         TAG                               IMAGE ID       SIZE
 ochmanskide/graalvm-maven                                                                          mandrel-22-2-maven-3-8-6-java-11  512232d63c93   918.61MB
@@ -101,19 +101,19 @@ https://hub.docker.com/_/debian
 FROM debian:stable-20220711-slim
 ```
 &nbsp;
-## 6. How to clone source code:
+## 6. How to clone source code?
 ```bash
 git clone https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11.git ~/Workspace/ochmanskide/base/images/debian/11-bullseye/mandrel/22-2/java/11/mandrel-22-2-maven-3-8-6-java-11
 ```
 
 &nbsp;
-## 7. Source code page:
+## 7. Source code page
 https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11
 &nbsp;
 
 &nbsp;
 
-## 8. How to build image from source:
+## 8. How to build image from source?
 More details available directly in the [Section 3. How to build locally](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11#3-how-to-build-locally) of [README.md](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11) file.  
   
 Excerpt:  
