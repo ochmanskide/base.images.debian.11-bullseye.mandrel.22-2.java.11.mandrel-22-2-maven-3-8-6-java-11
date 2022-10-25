@@ -33,31 +33,31 @@ fi
 echo "docker build -t $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG ."
 echo "docker push $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG"
 
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:latest
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/graalvm-maven:mandrel-22-2-maven-3-8-6-java-11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/graalvm-maven:22-2-maven-3-8-6-java-11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/graalvm-maven:java-11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/graalvm-maven:java11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/graalvm-maven:jdk-11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/graalvm-maven:jdk11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/mandrel-maven:mandrel-22-2-maven-3-8-6-java-11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/mandrel-maven:22-2-maven-3-8-6-java-11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/mandrel-maven:java-11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/mandrel-maven:java11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/mandrel-maven:jdk-11
-docker tag ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0 ochmanskide/mandrel-maven:jdk11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:latest
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-maven:mandrel-22-2-maven-3-8-6-java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-maven:22-2-maven-3-8-6-java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-maven:java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-maven:java11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-maven:jdk-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-maven:jdk11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-maven:mandrel-22-2-maven-3-8-6-java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-maven:22-2-maven-3-8-6-java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-maven:java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-maven:java11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-maven:jdk-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-maven:jdk11
 
-docker push ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:1.0.0
-docker push ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-maven-3-8-6-java-11:latest
-docker push ochmanskide/graalvm-maven:mandrel-22-2-maven-3-8-6-java-11
-docker push ochmanskide/graalvm-maven:22-2-maven-3-8-6-java-11
-docker push ochmanskide/graalvm-maven:java-11
-docker push ochmanskide/graalvm-maven:java11
-docker push ochmanskide/graalvm-maven:jdk-11
-docker push ochmanskide/graalvm-maven:jdk11
-docker push ochmanskide/mandrel-maven:mandrel-22-2-maven-3-8-6-java-11
-docker push ochmanskide/mandrel-maven:22-2-maven-3-8-6-java-11
-docker push ochmanskide/mandrel-maven:java-11
-docker push ochmanskide/mandrel-maven:java11
-docker push ochmanskide/mandrel-maven:jdk-11
-docker push ochmanskide/mandrel-maven:jdk11
+docker push $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG
+docker push $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:latest
+docker push $DOCKER_HUB_HOST/graalvm-maven:mandrel-22-2-maven-3-8-6-java-11
+docker push $DOCKER_HUB_HOST/graalvm-maven:22-2-maven-3-8-6-java-11
+docker push $DOCKER_HUB_HOST/graalvm-maven:java-11
+docker push $DOCKER_HUB_HOST/graalvm-maven:java11
+docker push $DOCKER_HUB_HOST/graalvm-maven:jdk-11
+docker push $DOCKER_HUB_HOST/graalvm-maven:jdk11
+docker push $DOCKER_HUB_HOST/mandrel-maven:mandrel-22-2-maven-3-8-6-java-11
+docker push $DOCKER_HUB_HOST/mandrel-maven:22-2-maven-3-8-6-java-11
+docker push $DOCKER_HUB_HOST/mandrel-maven:java-11
+docker push $DOCKER_HUB_HOST/mandrel-maven:java11
+docker push $DOCKER_HUB_HOST/mandrel-maven:jdk-11
+docker push $DOCKER_HUB_HOST/mandrel-maven:jdk11
